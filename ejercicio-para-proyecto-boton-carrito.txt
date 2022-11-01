@@ -1,0 +1,22 @@
+Para toda la práctica, no editar "a mano" el archivo main.css.
+
+1) Desarrollar el código necesario para que el botón que representa al carrito (.main-header__cart-button-container) en el Proyecto Integrador al hacerle click, muestre en la consola el mensaje "Mostrar" la primera vez que se presione. La siguiente, debe mostrar el mensaje "Ocultar". Mantener este comportamiento de manera alternada.
+
+2) Modificar los estilos de dicho "botón" para que se muestre distinto cuando esté "presionado" (es decir, en estado "Mostrar"). Para esto, utilizar clases de CSS (no atributo "style"), utilizando las reglas de BEM, con nombres en inglés, es decir, agregarle lo que en BEM se llama modifier.
+
+3) Estilizar un div contenedor en pantalla, llamado .cart-modal-container, que deberá mostrarse por adelante de todo lo que haya en la página, ocupando el 70% del ancho disponible. La altura regularla libremente. Agregarle sombras, para generar el efecto de estar flotando delante de los demás elementos.
+
+4) Programar el botón utilizado en el punto 2 para que el contenedor del punto 3 se muestre u oculte según corresponda.
+
+5) Programar el evento keydown en el objeto window para que cuando el usuario presione una tecla cualquiera el modal se cierre.
+
+6) Mostrar en la consola cuál es la tecla presionada. Si la tecla es "Esc", mostrar en la consola el texto "Cerrar modal".
+Tip: revisar en consola el objeto event "e".
+
+7) Modificar el comportamiento del punto 5 para que el modal se cierre cuando se presione la tecla Esc, y no al presionar cualquier otra tecla.
+
+8) Agregar al modal una x de cierre. Estilizarla para que se muestre como un botón de cerrar. Programarla para que también permita cerrar el modal.
+
+9) Lograr que al presionar en cualquier lugar de la página, fuera del modal, el mismo se cierre.
+
+10) Sincronizar los estilos del botón del punto 2 con el estado del modal (visible/oculto), para que su estado no se desacople al del modal al cerrar el mismo con cualquiera de las formas definidas.

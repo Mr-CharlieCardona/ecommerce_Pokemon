@@ -1,0 +1,115 @@
+.main {
+   height: 100%;
+   &__form-container {
+      background: url('/img/fondo-formulario.png');
+      padding: 1em;
+      
+
+   &__form {
+      margin: 0 auto;
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+
+      & label {
+         font-weight: bold;
+         cursor: pointer;
+         padding: 10px;
+
+      }
+
+      &__group {
+         &__error {
+            font-size: 12px;
+            margin-bottom: 0;
+            display: none;
+         }
+
+         &__error-activo {
+            display: block;
+         }
+         & i {
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            z-index: 100;
+            font-size: 12px;
+            opacity: 0;
+         }
+         & div {
+            position: relative;
+            border: 2px solid white;
+            & > input {
+               height: 40px;
+               padding: 10px;
+               width: 100%;
+               background-color: #fff;
+               border: 3px solid transparent;
+               transition: .3s ease all;
+
+               &:focus {
+                  border: 3px solid #2195f5;
+                  outline: none;
+               }
+            }
+            
+         }
+      }
+
+      
+      &__group-textarea {
+         grid-column-start: 1;
+         grid-column-end: 3;
+      }
+
+      &__group-input-terms {
+         & input {
+
+            margin-right: 10px;
+         }
+         grid-column-start: 1;
+         grid-column-end: 3;
+      }
+      &__errorMessage {
+         & p {
+            display: none;
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            background-color: #ec7474;
+            padding: 5px;
+         }
+         grid-column-start: 1;
+         grid-column-end: 3;
+      }
+      
+      
+
+      
+      & textarea {
+         width: 100%;
+         border-radius: 10px;
+         padding: 1em;
+         background-color: rgba(255, 255, 255, 0.432);
+         &:focus {
+            background-color: #6a6a6b80;
+         }
+      }
+      & button {
+         padding: .5em 2em;
+         border-radius: 10px;
+         background-color: #034bb8a9;
+         border: 2px solid #83eff3;
+         color: white;
+         font-weight: bold;
+         cursor: pointer;
+
+         &:hover {
+            background-color: #0b298b;
+         }
+      }
+      
+   }
+}
+}

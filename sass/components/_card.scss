@@ -1,0 +1,128 @@
+
+
+.card {
+   width: 15em;
+   border-radius: 15px;
+   box-shadow: 
+      1px 3px 5px rgba(0,0,0, .2), 0 0 8px rgba(0,0,0, .05);
+   transition:  all .2s;
+   cursor: pointer;
+
+   
+   & > article  {
+      border-radius: 15px;
+   }
+   & > article > .card__image-container {
+      border-radius:  15px 15px 0 0;
+      padding: 1em;
+   }
+   & > article > .card__image-container > img {
+      object-fit: fill;
+   }
+
+   & > article > .card__content {
+      border-radius:  0  0 15px 15px;
+      height: 90px;
+      text-align: center;
+      padding: 1em 0 1em 0;
+   }
+
+&:hover {
+   transform: scale(1.03);
+   transform-origin: bottom;
+   background-color: orange;
+}
+&:nth-child(8n+1){
+   background-color: #ffa600;
+   border-radius: 15px;
+   color: #ac041a;
+   & > article > .card__image-container {
+      background-color: #FFC400;
+   }
+   
+}
+&:nth-child(8n+2){
+   background-color: #9424E5;
+   color: #d38b06;
+   & > article > .card__image-container {
+      background-color: #b95cfc;
+         }
+
+      
+   
+}
+&:nth-child(8n+3){
+   background-color: #00C3CB;
+   color: #5d1af8;
+   & > article > .card__image-container {
+      background-color: #02f7ff;
+   }
+   
+}
+&:nth-child(8n+4){
+   background-color: #4040aa;
+   color: #ffe02f;
+   & > article > .card__image-container {
+      background-color: #6363E0;
+   }
+}
+&:nth-child(8n+5){
+   background-color: #016B08;
+   color: rgb(218, 218, 218);
+   & > article > .card__image-container {
+      background-color: #4bb452;
+   }
+}
+&:nth-child(8n+6){
+   background-color: #c43787;
+   color: lightgrey;
+   & > article > .card__image-container {
+      background-color: #FF63BB;
+   }
+}
+&:nth-child(8n+7){
+   background-color: #FF4722;
+   color: #55068d;
+   & > article > .card__image-container {
+      background-color: #ff6c4f;
+   }
+}
+&:nth-child(8n+8){
+   background-color: #c56515;
+   color: yellow;
+   & > article > .card__image-container {
+      background-color: #d68d52;
+   }
+}
+
+
+&__article {
+   display: flex;
+   flex-direction: column;
+
+   @media (min-width: 320px){
+      flex-direction: row;
+   }
+   @media (min-width: 500px){
+      flex-direction: column;
+   }
+}
+
+&__image-container {
+   background: #303030;
+   height: 10em;
+   
+   @media (min-width: 320px){
+      width: 10em;
+   }
+   @media (min-width: 500px){
+      width: 100%;
+   }
+}
+
+&__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+}
